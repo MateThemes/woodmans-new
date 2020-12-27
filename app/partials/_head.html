@@ -1,0 +1,131 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+<title>@@title :: @@websitename</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="@@title">
+<meta name="description" content="A modern and clean ecommerce theme for Mall and OctoberCMS">
+<link rel="canonical" href="#">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="#">
+<meta property="og:title" content="@@title">
+<meta property="og:description" content="A modern and clean ecommerce theme for Mall and OctoberCMS">
+<meta property="og:image" content="#">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="#">
+<meta property="twitter:title" content="@@title">
+<meta property="twitter:description" content="A modern and clean ecommerce theme for Mall and OctoberCMS">
+<meta property="twitter:image" content="#">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="@@path/assets/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="@@path/assets/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="@@path/assets/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="@@path/assets/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="@@path/assets/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="@@path/assets/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="@@path/assets/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="@@path/assets/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="@@path/assets/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="@@path/assets/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="@@path/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="@@path/assets/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="@@path/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="@@path/assets/images/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="@@path/assets/images/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- ThemeCSS -->
+<link rel="stylesheet" type="text/css" href="@@path/css/styles.css">
+
+<!-- Page loading styles-->
+<style>
+    .tm-page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+    }
+
+    .tm-page-loading.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .tm-page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+    }
+
+    .tm-page-loading.active>.tm-page-loading-inner {
+        opacity: 1;
+    }
+
+    .tm-page-loading-inner>span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #333333;
+    }
+
+    .tm-page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #333333;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+    }
+
+    @-webkit-keyframes spinner {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spinner {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<!-- Page loading scripts-->
+<script>
+    (function () {
+        window.onload = function () {
+            var preloader = document.querySelector('.tm-page-loading');
+            preloader.classList.remove('active');
+            setTimeout(function () {
+                preloader.remove();
+            }, 2000);
+        };
+    })();
+</script>
