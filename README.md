@@ -1,4 +1,4 @@
-# [Woodman's Finest DEV - New eCommerce Theme)
+# [Woodman's Finest DEV - New eCommerce Theme]
 
 Woodman's Finest DEV is the new theme for a restart with Gatsby and Wordpress - Woocommerce
 
